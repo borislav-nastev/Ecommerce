@@ -1,0 +1,35 @@
+.brand_form {
+  position: relative;
+}
+
+.brand_form input {
+  padding-right: 5em;
+}
+
+.brand_form button {
+  position: absolute;
+  cursor: pointer;
+  font-size: 3rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--blue);
+  top: 4.3rem;
+  right: 1rem;
+  transform: scale(1);
+  transition: var(--transition);
+}
+
+.brand_form button:hover {
+  transform: scale(1.2);
+}
+
+.brand_form button:disabled {
+  opacity: .2;
+}
+
+@media screen and (min-width: 800px) {
+  .brand_form_container {
+    margin-top: 2em;
+  }
+}

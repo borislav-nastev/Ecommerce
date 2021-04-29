@@ -1,0 +1,192 @@
+.search_bar {
+    width: 85%;
+    background-color: var(--white);
+    margin: 5em auto 3em;
+    box-shadow: var(--darkShadow);
+}
+
+.search_bar h4 {
+    font-size: 2rem;
+    color: var(--blue);
+    border-bottom: 1px solid var(--gray);
+    margin: 0 auto .5em;
+    padding-bottom: .2em;
+    text-align: center;
+    width: 90%;
+}
+
+.search_bar label {
+    font-size: 1.6rem;
+    color: var(--gray);
+    margin-bottom: .5em;
+    display: inline-block;
+}
+
+.input_box {
+    width: 90%;
+    margin: 0 auto 1em;
+    position: relative;
+}
+
+.search_btn {
+    cursor: pointer;
+    font-size: 1.6rem;
+    position: absolute;
+    color: var(--black);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    right: 1.5rem;
+    top: 50%;
+    display: inline-block;
+    margin-top: .3rem;
+}
+
+.input_box input {
+    width: 100%;
+    font-size: 1.4rem;
+    padding: .5em 3em .5em 1em;
+    outline: none;
+    border: 1px solid var(--gray);
+    border-radius: .3rem;
+    color: var(--gray);
+    background-color: transparent;
+}
+
+.input_group {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto 2em;
+}
+
+.select_box {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.select_box label {
+    margin-bottom: .2em;
+}
+
+.select_box select {
+    font-size: 1.4rem;
+    height: auto;
+}
+
+.input_price {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.input_price label {
+    margin-bottom: .2em;
+}
+
+.input_price input {
+    background-color: var(--darkRed);
+}
+
+.max_min {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.max_min p:first-child {
+    color: var(--lightRed);
+}
+
+.max_min p:last-child {
+    color: var(--lightGreen);
+}
+
+@media screen and (min-width: 650px) {
+    .search_bar {
+        padding: 2em;
+    }
+
+    .search_bar h4 {
+        margin: 0;
+        margin-bottom: .5em;
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    .search_bar form {
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 70px);
+        gap: 2rem;
+    }
+
+    .input_box {
+        width: 100%;
+        margin: 0;
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
+
+    .input_group {
+        width: 100%;
+        margin: 0;
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 1;
+        gap: 2rem;
+    }
+
+    .select_box {
+        width: 50%;
+    }
+
+    .input_price {
+        width: 100%;
+        margin: 0;
+        padding-bottom: 0;
+    }
+
+    .input_price label {
+        margin-bottom: .7em;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .search_bar form {
+        column-gap: 4rem;
+    }
+
+    .input_group {
+        gap: 4rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .search_bar {
+        width: 95%;
+    }
+
+    .search_bar h4 {
+        font-size: 2.5rem;
+    }
+
+    .search_bar form {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 70px;
+    }
+
+    .input_group {
+        grid-column: 3 / span 2;
+        grid-row: 1 / span 1;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .search_bar {
+        width: 100%;
+    }
+}

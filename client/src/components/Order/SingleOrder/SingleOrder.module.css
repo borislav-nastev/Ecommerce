@@ -1,0 +1,77 @@
+.row:nth-child(odd) {
+    background: rgba(0,0,0,.1);
+}
+
+.row td {
+    text-align: center;
+    color: var(--gray);
+    padding: 1em;
+}
+
+.row:nth-child(odd) td {
+    color: var(--black);
+}
+
+.status_td {
+    text-transform: capitalize;
+}
+
+.status_td_admin select{
+    text-transform: capitalize;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--gray);
+    font-size: 1.1rem;
+}
+
+.row .price_td,
+.row:nth-child(odd) .price_td
+ {
+    color: var(--darkGreen);
+    font-weight: 600;
+}
+
+.actions button {
+    display: inline-block;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: var(--white);
+    border: 1px solid transparent;
+    transition: var(--transition);
+    border-radius: .3rem;
+    padding: .2em .5em;
+    transition: var(--transition);
+}
+
+.actions button:disabled {
+    opacity: .2;
+}
+
+.delete_order {
+    background-color: var(--darkRed);
+}
+
+.delete_order:hover {
+    color: var(--darkRed);
+    border: 1px solid var(--darkRed);
+    background-color: var(--white);
+}
+
+.details_btn {
+    background-color: var(--blue);
+}
+
+.details_btn:hover {
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    background-color: transparent;
+}
+
+@media screen and (min-width: 600px) {
+    .row {
+        font-size: 1.4rem;
+    }
+    .status_td_admin select {
+        font-size: 1.4rem;
+    }
+}

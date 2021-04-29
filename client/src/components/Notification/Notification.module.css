@@ -1,0 +1,22 @@
+.notification {
+    position: absolute;
+    top: 8rem;
+    left: 2%;
+    padding: 1em;
+    font-size: 1.6rem;
+    background-color: var(--blue);
+    border: 1px solid var(--gray);
+    border-radius: 1em;
+    color: var(--white);
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+@media screen and (min-width: 1150px) {
+    .notification {
+        top: 11rem;
+    }
+}

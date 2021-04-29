@@ -1,0 +1,10 @@
+.list_container {
+    background-color: var(--white);
+    box-shadow: var(--darkShadow);
+    padding: 2em;
+    width: 90%;
+    max-width: 45rem;
+    max-height: 50rem;
+    margin: 4em auto;
+    overflow-y: scroll;
+}

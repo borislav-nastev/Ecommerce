@@ -1,0 +1,38 @@
+.brand {
+    display: flex;
+    margin-bottom: 1em;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--gray);
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gray);
+    padding-bottom: .5em;
+}
+
+.brand:last-child {
+    margin-bottom: 0;
+}
+
+.icons_container button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+}
+
+.icons_container button:first-child {
+    margin-right: .6em;
+}
+
+.icons_container button:disabled {
+    opacity: .2;
+}
+
+.edit_icon { 
+    color: var(--blue);
+}
+
+.delete_icon {
+    color: var(--darkRed);
+}

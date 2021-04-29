@@ -1,0 +1,35 @@
+.category_form {
+    position: relative;
+  }
+
+  .category_form input {
+    padding-right: 5em;
+  }
+  
+  .category_form button {
+    position: absolute;
+    cursor: pointer;
+    font-size: 3rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--blue);
+    top: 4.3rem;
+    right: 1rem;
+    transform: scale(1);
+    transition: var(--transition);
+  }
+  
+  .category_form button:hover {
+    transform: scale(1.2);
+  }
+
+  .category_form button:disabled {
+    opacity: .2;
+  }
+
+  @media screen and (min-width: 800px) {
+    .category_form_container {
+      margin-top: 2em;
+    }
+  }
